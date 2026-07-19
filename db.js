@@ -1,7 +1,5 @@
-
-
 var mongoose = require("mongoose");
-var MONGO_URL = "mongodb://localhost:27017/military-assets";
+var MONGO_URL = process.env.MONGO_URL || "mongodb://localhost:27017/military-assets";
 
 var connectDB = async function () {
   try {
