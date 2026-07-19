@@ -1,4 +1,5 @@
 var mongoose = require("mongoose");
+const url="mongodb+srv://badvelshavali_db_user:Shavali%230703@shavali-cluster0.3jzuct9.mongodb.net/military_assets?appName=Shavali-Cluster0"
 var MONGO_URL = process.env.MONGO_URL || "mongodb://localhost:27017/military-assets";
 
 var connectDB = async function () {
