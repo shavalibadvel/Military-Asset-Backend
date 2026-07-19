@@ -12,8 +12,11 @@ var assignmentRoutes = require("./routes/AssignmentRoutes");
 var server = express();
 var PORT = 8085;
 
-
-server.use(cors());            
+server.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 server.use(express.json());    
 server.use(apiLogger);        
 
